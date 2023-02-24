@@ -30,7 +30,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: my-user-password
+  name: my-user-password-{{ .Values.name }}
 type: Opaque
 stringData:
   password: <your-password-here>
