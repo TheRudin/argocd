@@ -11,7 +11,7 @@ spec:
     namespace: default
   project: default
   source:
-    chart: mongodbtestone
+    chart: mongodb-helm-charts/community-operator
     helm:
       values:
     repoURL: https://mongodb.github.io/helm-charts
