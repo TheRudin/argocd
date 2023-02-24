@@ -1,7 +1,7 @@
 apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
-  name: example-mongodb
+  name: mongodb-{{ .Values.name }}
   namespace: default
 spec:
   members: 3
