@@ -14,10 +14,6 @@ spec:
     path: charts/mongodb
     repoURL: https://github.com/TheRudin/argocd.git
     targetRevision: HEAD
-    helm:
-      values: |
-        metadata:
-          name: mongodb-timo
   syncPolicy:
     automated:
       prune: true
