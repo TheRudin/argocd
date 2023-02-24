@@ -14,9 +14,8 @@ spec:
     chart: mongodbtestone
     helm:
       values:
-    repoURL: https://github.com/mongodb/helm-charts.git
-    targetRevision: mongodb-kubernetes-operator-0.7.1
-    path: charts/community-operator/
+    repoURL: https://mongodb.github.io/helm-charts
+    targetRevision: 0.7.8
   syncPolicy:
     automated:
       prune: true
