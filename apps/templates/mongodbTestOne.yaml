@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mongodbTestOne
+  namespace: default
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  project: default
+  source:
+    chart: mongodbTestOne
+    helm:
+      values:
+    repoURL: https://github.com/mongodb/helm-charts.git
+    targetRevision: HEAD
+    path: charts/community-operator/
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
