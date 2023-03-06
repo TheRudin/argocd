@@ -14,11 +14,10 @@ spec:
     chart: loki
     helm:
       values: |
-        loki:
-          commonConfig:
-            replication_factor: 1
-          storage:
-            type: 'filesystem'
+        commonConfig:
+          replication_factor: 1
+        storage:
+          type: 'filesystem'
     repoURL: https://grafana.github.io/helm-charts
 
     targetRevision: 4.8.0
