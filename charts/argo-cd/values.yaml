@@ -9,3 +9,5 @@ argo-cd:
         - type: helm
           name: argo-cd
           url: https://argoproj.github.io/argo-helm
+  containerSecurityContext:
+    runAsNonRoot: false
