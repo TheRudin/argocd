@@ -1,7 +1,7 @@
 apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
-  name: mongodb-{{ .Values.name }}
+  name: mongodb-flavio
   namespace: default
 spec:
   members: 3
