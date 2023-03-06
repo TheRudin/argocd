@@ -21,4 +21,4 @@ forward the port: kubectl port-forward svc/argo-cd-argocd-server 8080:443
 
 get initial password from argo: kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 
---->  aMfJjiApzHAoYKvu
+--->  baQej15OnJIijnfu
